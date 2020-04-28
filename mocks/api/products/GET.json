@@ -1,0 +1,103 @@
+{
+    "products":[
+        {
+            "name":"Cerveja Real",
+            "price":"10",
+            "origin":"Portugal",
+            "liters":"0.5",
+            "type":"Lager",
+            "image":"real.jpg",
+            "id":"101"
+        },
+        {
+            "name":"Cerveja Real Special",
+            "price":"15",
+            "origin":"Portugal",
+            "liters":"0.5",
+            "type":"Lager",
+            "image":"real.jpg",
+            "id":"102"
+        },
+        {
+            "name":"Charlenne Beer",
+            "price":"20",
+            "origin":"England",
+            "liters":"0.5",
+            "type":"Lager",
+            "image":"charlene.jpg",
+            "id":"103"
+        },
+        {
+            "name":"Hiper Bock",
+            "price":"9.9",
+            "origin":"Portugal",
+            "liters":"0.5",
+            "type":"Lager",
+            "image":"bock.jpg",
+            "id":"104"
+        },
+        {
+            "name":"Ching Ling",
+            "price":"5",
+            "origin":"China",
+            "liters":"0.3",
+            "type":"Lager",
+            "image":"chinese-beer.jpg",
+            "id":"107"
+        },
+        {
+            "name":"Ching Ling III",
+            "price":"7",
+            "origin":"China",
+            "liters":"0.3",
+            "type":"Lager",
+            "image":"chinese-beer.jpg",
+            "id":"202"
+        },
+        {
+            "name":"Ching Ling II",
+            "price":"5.5",
+            "origin":"China",
+            "liters":"0.3",
+            "type":"Lager",
+            "image":"chinese-beer.jpg",
+            "id":"201"
+        },
+        {
+            "name":"Cerveja Sarkis",
+            "price":"15",
+            "origin":"Portugal",
+            "liters":"0.5",
+            "type":"Lager",
+            "image":"real.jpg",
+            "id":"203"
+        },
+        {
+            "name":"Cerveja Villareal",
+            "price":"18",
+            "origin":"Espanha",
+            "liters":"0.5",
+            "type":"Lager",
+            "image":"real.jpg",
+            "id":"204"
+        },
+        {
+            "name":"Cerveja Sarkis II",
+            "price":"15",
+            "origin":"Portugal",
+            "liters":"0.5",
+            "type":"Lager",
+            "image":"real.jpg",
+            "id":"205"
+        },
+        {
+            "name":"Cerveja Sarkis III",
+            "price":"15",
+            "origin":"Portugal",
+            "liters":"0.5",
+            "type":"Lager",
+            "image":"real.jpg",
+            "id":"206"
+        }
+    ]
+}

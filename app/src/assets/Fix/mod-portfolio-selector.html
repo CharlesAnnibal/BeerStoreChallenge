@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>[Best Bank] [BY Design System Guide]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <!-- INFO: Assets copied from best bank site -->
+        <script language="javascript" src="libs/best/scripts/vendor.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900&display=swap" rel="stylesheet">
+        <link href="libs/best/css/BESTBootstrap_base.css?v=001" rel="stylesheet">
+        <link href="libs/best/css/vendor.min.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        
+        <!-- ----------------------
+
+	Module Start: Best Portfolio Selector
+	Date: 2020-03-31
+
+	Assets:
+		css/mod-portfolio-selector.css
+		css/mod-portfolio-selector.min.css
+
+---------------------- -->
+        <script src="scripts/mod-popup.min.js?v=20191129" type="text/javascript"></script>
+        <link href="css/mod-popup.min.css?v=20191129" rel="stylesheet">
+        <script src="scripts/mod-portfolio-selector.js?v=20191129" type="text/javascript"></script>
+        <link href="css/mod-portfolio-selector.min.css?v=20190813" rel="stylesheet">
+        <section class="bbest-module-portfolio-selector">
+            <div class="container">
+                <div class="row portfolio-top-row js-top-row">
+                    <h3 class="title-lg">Escolha a opção indicada a si</h3>
+                    <div class="cols-wrapper">
+                        <div class="column">
+                            <span class="buttons-label">O seu perfil</span>
+                            <div class="buttons-wrapper">
+                                <!-- data-bars define o tamanho das 4 barras em percentagem, a soma dos 4 valores deve dar 100% -->
+                                <button class="btn-portfolio" data-button-type="profile" data-eft="false" data-profile="conservador" data-bars="5,15,50,30">Conservador</button>
+                                <button class="btn-portfolio" data-button-type="profile" data-profile="moderado" data-bars="20,25,15,40">Moderado</button>
+                                <button class="btn-portfolio" data-button-type="profile" data-profile="dinamico" data-bars="40,10,20,30">Dinâmico</button>
+                            </div>
+                            <div class="profile-result">
+                                <span class="title-sm" data-profile="conservador">Conservador</span>
+                                <span class="title-sm" data-profile="moderado">Moderado</span>
+                                <span class="title-sm" data-profile="dinamico">Dinâmico</span>
+                                <p class="description" data-profile="conservador">O objetivo a médio prazo é a valorização do capital ligeiramente superior à taxa de juro sem risco, através do investimento, na sua maioria, em obrigações, sendo a exposição ao mercado de ações efetuada de forma reduzida.</p>
+                                <p class="description" data-profile="moderado">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p class="description" data-profile="dinamico">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                <div class="bars-wrapper">
+                                    <span class="bar-alt js-bar"></span>
+                                    <span class="bar-liquid js-bar"></span>
+                                    <span class="bar-obrig js-bar"></span>
+                                    <span class="bar-actions js-bar"></span>
+                                </div>
+                                <ul class="bars-description">
+                                    <li class="bar-alt">Alternativos</li>
+                                    <li class="bar-liquid">Liquidez</li>
+                                    <li class="bar-obrig">Obrigações</li>
+                                    <li class="bar-actions">Ações</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <span class="buttons-label">O que procura</span>
+                            <div class="buttons-wrapper buttons-duo">
+                                <button class="btn-portfolio" data-button-type="choice">Fundos - gestão passiva</button>
+                                <button class="btn-portfolio" data-button-type="choice" data-selection="eft">ETF - gestão ativa</button>
+                            </div>
+                            <span class="label-eft"> [ETF - gestão ativa só disponíveis para Perfil Moderado e Dinâmico] </span>
+                            <span class="buttons-label form-label">Quanto quer investir</span>
+                            <div class="form-wrapper">
+                                <div class="input-wrapper">
+                                    <input class="input-amount js-input-amount" type="number" placeholder="Valor mínimo de 20000€">
+                                    <label class="input-error-label">Valor mínimo de 20000€</label>
+                                </div>
+                                <button class="btn-submit js-btn-submit">A carteira ideal para mim</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row portfolio-bottom-row js-bottom-row">
+                    <h4 class="title-md">Construímos a carteira adequada à sua seleção:</h4>
+                    <h5 class="title-lg">O seu perfil: <span class="result-profile">Perfil <span class="result"></span></span> | Procura: <span class="result-search"></span> | Investimento: <span class="result-amount"></span></h5>
+                    <div class="buttons-top">
+                        <a href="#link" class="btn-pdf">Portfolio Selector Review</a>
+                        <a href="#link" class="btn-pdf">Como fazemos a análise</a>
+                    </div>
+                    <div class="bbest-fundos-container">
+                        <div class="best-comp-fundos-slider js-compFundosSlider">
+                            <div class="fundo-item slider-item js-cartItem range-8 rate-0" data-cart-id="1">
+                                <div class="title-md"><span><span class="fundo-name">Pictet</span>- Water R EUR</span> <button class="fundo-show-more" data-action="showFundoInfo"><i class="icon-question"></i></button> </div>
+                                <div class="fundo-info-container js-fundoInfo">
+                                    <p>Fundo que investe em ações de empresas de todo o mundo que, na opinião do gestor, poderão beneficiar dos esforços de contenção ou limitação do impacto das alterações climáticas globais. Fundo criado em 2007 e conta com 420 milhões USD de ativos sob gestão.</p>
+                                </div>
+                                <div class="inner-container">
+                                    <div class="col">
+                                        <div class="col-title">Categoria</div>
+                                        <div class="col-value-large">+ 7,96%</div>
+                                        <div class="col-value-small">05 junho 2019</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Categoria</div>
+                                        <div class="col-value">Merc. Monetário EUR</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Alocação</div>
+                                        <div class="col-value">8.5% <br>1000€</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Risco</div>
+                                        <div class="col-value-range">8</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">ISIN</div>
+                                        <div class="col-value">LU0104885248</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">rating</div>
+                                        <div class="col-value-stars"></div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">montante min.</div>
+                                        <div class="col-value">1 Ups/ações</div>
+                                    </div>
+                                    <div class="col col-btns">
+                                        <button type="button" class="bbest-square-btn js-openBtn" data-open="modalPopupIFrame" data-url="/pages/modules/mod-comparar-fundos.html">Ver Detalhe</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fundo-item slider-item js-cartItem range-3 rate-1" data-cart-id="1">
+                                <div class="title-md"><span><span class="fundo-name">Pictet</span>- Water R EUR</span> <button class="fundo-show-more" data-action="showFundoInfo"><i class="icon-question"></i></button> </div>
+                                <div class="fundo-info-container js-fundoInfo">
+                                    <p>Fundo que investe em ações de empresas de todo o mundo que, na opinião do gestor, poderão beneficiar dos esforços de contenção ou limitação do impacto das alterações climáticas globais. Fundo criado em 2007 e conta com 420 milhões USD de ativos sob gestão.</p>
+                                </div>
+                                <div class="inner-container">
+                                    <div class="col">
+                                        <div class="col-title">Categoria</div>
+                                        <div class="col-value-large">+ 7,96%</div>
+                                        <div class="col-value-small">05 junho 2019</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Categoria</div>
+                                        <div class="col-value">Merc. Monetário EUR</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Alocação</div>
+                                        <div class="col-value">8.5% <br>1000€</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Risco</div>
+                                        <div class="col-value-range">3</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">ISIN</div>
+                                        <div class="col-value">LU0104885248</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">rating</div>
+                                        <div class="col-value-stars"></div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">montante min.</div>
+                                        <div class="col-value">1 Ups/ações</div>
+                                    </div>
+                                    <div class="col col-btns">
+                                        <button type="button" class="bbest-square-btn js-openBtn" data-open="modalPopupIFrame" data-url="/pages/modules/mod-comparar-fundos.html">Ver Detalhe</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fundo-item slider-item js-cartItem range-2 rate-3" data-cart-id="1">
+                                <div class="title-md"><span><span class="fundo-name">Pictet</span>- Water R EUR</span> <button class="fundo-show-more" data-action="showFundoInfo"><i class="icon-question"></i></button> </div>
+                                <div class="fundo-info-container js-fundoInfo">
+                                    <p>Fundo que investe em ações de empresas de todo o mundo que, na opinião do gestor, poderão beneficiar dos esforços de contenção ou limitação do impacto das alterações climáticas globais. Fundo criado em 2007 e conta com 420 milhões USD de ativos sob gestão.</p>
+                                </div>
+                                <div class="inner-container">
+                                    <div class="col">
+                                        <div class="col-title">Categoria</div>
+                                        <div class="col-value-large">+ 7,96%</div>
+                                        <div class="col-value-small">05 junho 2019</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Categoria</div>
+                                        <div class="col-value">Merc. Monetário EUR</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Alocação</div>
+                                        <div class="col-value">8.5% <br>1000€</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Risco</div>
+                                        <div class="col-value-range">2</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">ISIN</div>
+                                        <div class="col-value">LU0104885248</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">rating</div>
+                                        <div class="col-value-stars"></div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">montante min.</div>
+                                        <div class="col-value">1 Ups/ações</div>
+                                    </div>
+                                    <div class="col col-btns">
+                                        <button type="button" class="bbest-square-btn js-openBtn" data-open="modalPopupIFrame" data-url="/pages/modules/mod-comparar-fundos.html">Ver Detalhe</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fundo-item slider-item js-cartItem range-10 rate-5" data-cart-id="1">
+                                <div class="title-md"><span><span class="fundo-name">Pictet</span>- Water R EUR</span> <button class="fundo-show-more" data-action="showFundoInfo"><i class="icon-question"></i></button> </div>
+                                <div class="fundo-info-container js-fundoInfo">
+                                    <p>Fundo que investe em ações de empresas de todo o mundo que, na opinião do gestor, poderão beneficiar dos esforços de contenção ou limitação do impacto das alterações climáticas globais. Fundo criado em 2007 e conta com 420 milhões USD de ativos sob gestão.</p>
+                                </div>
+                                <div class="inner-container">
+                                    <div class="col">
+                                        <div class="col-title">Categoria</div>
+                                        <div class="col-value-large">+ 7,96%</div>
+                                        <div class="col-value-small">05 junho 2019</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Categoria</div>
+                                        <div class="col-value">Merc. Monetário EUR</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Alocação</div>
+                                        <div class="col-value">8.5% <br>1000€</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">Risco</div>
+                                        <div class="col-value-range">10</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">ISIN</div>
+                                        <div class="col-value">LU0104885248</div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">rating</div>
+                                        <div class="col-value-stars"></div>
+                                    </div>
+                                    <div class="col col-double">
+                                        <div class="col-title">montante min.</div>
+                                        <div class="col-value">1 Ups/ações</div>
+                                    </div>
+                                    <div class="col col-btns">
+                                        <button type="button" class="bbest-square-btn js-openBtn" data-open="modalPopupIFrame" data-url="/pages/modules/mod-comparar-fundos.html">Ver Detalhe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons-bottom">
+                        <a href="#link" class="btn-notifications">Receber atualizações</a>
+                        <a href="#link" class="bbest-square-btn rounded-square">Ver x-ray da Carteira</a>
+                        <a href="#link" class="bbest-square-btn rounded-square btn-full">Contacte o seu gestor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bbest-module-portfolio-selector-footnote">
+            <div class="container">
+                <p>Sempre que o Funds Selector sofrer alterações, o fundo será identificado com o símbolo .<br> Sem Medidas de rendibilidade, calculadas em Euros, sendo a data final a indicada e a data inicial a mesma um ano antes.<br> Os valores divulgados têm implícita a fiscalidade suportada diretamente pelos organismos de investimento coletivo. Na esfera do investidor, pessoa singular ou coletiva, recaem ainda impostos sobre os rendimentos distribuídos e mais-valias obtidas no resgate, conforme regime fiscal em vigor, descrito em detalhe na documentação legal do fundo. As rendibilidades divulgadas representam dados passados, não constituindo garantia de rendibilidade futura, porque o valor das Unidades de Participação pode aumentar ou diminuir em função do nível de risco que varia entre 1 (risco mínimo) e 7 (risco máximo). O investimento no organismo de investimento coletivo pode implicar a perda do capital investido.<br> Uma redução dos riscos de investimento pode ser alcançada através de uma abrangente diversificação dos investimentos por diferentes classes e tipos de ativos financeiros. O Banco Best considera que uma concentração superior a 15% do património depositado no Banco Best num único ativo financeiro, incluindo a aquisição/subscrição do presente produto, implica um acréscimo dos riscos de investimento.<br> A presente informação não dispensa a leitura do documento de Informação Fundamental ao Investidor e do Prospeto do fundo de investimento disponível neste site.<br> A presente comunicação tem um caráter meramente informativo e não deve ser entendida, em nenhuma situação, como uma proposta contratual, nem como uma recomendação de investimento. Eventuais informações sobre instrumentos financeiros têm um caráter padronizado e carecem de verificação das circunstâncias pessoais do investidor no momento da subscrição. Os Clientes deverão informar-se sobre as características do instrumento financeiro apresentado antes de qualquer decisão de investimento.</p>
+            </div>
+        </section>
+        <!-- POPUP NORMAL -->
+        <div class="bbest-module-popup js-modalPopupIFrame">
+            <div class="popup-iframe">
+                <div class="header-wrap">
+                    <i class="close js-closeBtn" data-close="modalPopupIFrame"></i>
+                    <h2 class="title-md">Detalhe do fundo</h2>
+                </div>
+                <iframe src="https://www.wikipedia.com"></iframe>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
